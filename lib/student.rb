@@ -1,5 +1,4 @@
 class Student
-
   attr_accessor :name, :grade
   attr_reader :id
 
@@ -16,9 +15,7 @@ class Student
       name TEXT,
       grade INTEGER)
       SQL
-
     DB[:conn].execute(sql)
-    @id =
   end
 
   def self.drop_table
